@@ -54,7 +54,7 @@ FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 �
 RemoveBG_API = environ.get("RemoveBG_API", "")
 WELCOM_VID = environ.get("WELCOM_VID", "https://telegra.ph/file/4073ba3f8086757c0ac29.mp4")
 WELCOM_TEXT = environ.get("WELCOM_TEXT", "")
-PMFILTER = is_enabled(environ.get('PMFILTER', "True"), True)
+PMFILTER = is_enabled(environ.get('PMFILTER', "False"), False)
 G_FILTER = is_enabled(environ.get("G_FILTER", "True"), True)
 BUTTON_LOCK = is_enabled(environ.get("BUTTON_LOCK", "True"), True)
 
@@ -80,4 +80,4 @@ INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled(environ.get('MELCOW_NEW_USERS', "True"), True)
 PROTECT_CONTENT = is_enabled(environ.get('PROTECT_CONTENT', "True"), True)
-PUBLIC_FILE_STORE = is_enabled(environ.get('PUBLIC_FILE_STORE', "True"), True)
+PUBLIC_FILE_STORE = is_enabled(environ.get('PUBLIC_FILE_STORE', "False"), False)
