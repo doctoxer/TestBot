@@ -55,7 +55,7 @@ async def save_group(bot, message):
                         pass
                 temp.MELCOW['welcome'] = await message.reply_video(
                                                  video=(WELCOW_VID),
-                                                 caption=WELCOM_TEXT.format(user=u.mention, chat=message.chat.title)),
+                                                 caption=WELCOM_TEXT.format(user=u.mention, chat=message.chat.title),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
                                                                            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙 𝟷', url="https://t.me/+ghT0ID_GVzkxNmNl"),
