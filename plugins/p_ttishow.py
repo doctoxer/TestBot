@@ -61,7 +61,7 @@ async def save_group(bot, message):
                                                                            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙 𝟷', url="https://t.me/+ghT0ID_GVzkxNmNl"),
                                                                            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙 𝟸', url="https://t.me/+1H3gN_hNeMdjODg9")
                                                                         ],[
-                                                                           InlineKeyboardButton("𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝙽𝚎𝚠 𝙼𝚘𝚟𝚒𝚎𝚜 𝙷𝚎𝚛𝚎", url="t.me/MPG_RequestBot")
+                                                                           InlineKeyboardButton("Send Movie Name To Upload", url="t.me/MPG_RequestBot")
                                                                          ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
