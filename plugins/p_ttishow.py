@@ -54,14 +54,14 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_video(
-                                                 video=(MELCOW_VID),
+                                                 video=(WELCOW_VID),
                                                  caption=WELCOM_TEXT.format(user=u.mention, chat=message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                                                                           InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                                                                           InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙 𝟷', url="https://t.me/+ghT0ID_GVzkxNmNl"),
+                                                                           InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙 𝟸', url="https://t.me/+1H3gN_hNeMdjODg9")
                                                                         ],[
-                                                                           InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
+                                                                           InlineKeyboardButton("𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝙽𝚎𝚠 𝙼𝚘𝚟𝚒𝚎𝚜 𝙷𝚎𝚛𝚎", url="t.me/MPG_RequestBot")
                                                                          ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
