@@ -28,7 +28,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS' ,'https://graph.org/file/01ddfcb1e8203879a63d7.jpg https://graph.org/file/d69995d9846fd4ad632b8.jpg https://graph.org/file/a125497b6b85a1d774394.jpg https://graph.org/file/43d26c54d37f4afb830f7.jpg https://graph.org/file/60c1adffc7cc2015f771c.jpg https://graph.org/file/d7b520240b00b7f083a24.jpg https://graph.org/file/0f336b0402db3f2a20037.jpg https://graph.org/file/39cc4e15cad4519d8e932.jpg https://graph.org/file/d59a1108b1ed1c6c6c144.jpg https://te.legra.ph/file/3a4a79f8d5955e64cbb8e.jpg https://graph.org/file/d69995d9846fd4ad632b8.jpg')).split()
+PICS = (environ.get('PICS' ,'https://telegra.ph/file/b667b140d1ebca841ca75.jpg https://telegra.ph/file/a75873d28ed59d9d00e76.jpg https://telegra.ph/file/d06cd14326ce7d5f9eae3.jpg https://telegra.ph/file/42a308e1a1c7b0c447581.jpg')).split()
 BOT_START_TIME = time()
 
 # Admins, Channels & Users
@@ -42,8 +42,8 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://amalmathew:amalmathew@cluster0.nsny9yj.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "MoviePalace")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #maximum search result buttos count in number#
@@ -52,7 +52,7 @@ START_MESSAGE = environ.get('START_MESSAGE', '👋 𝙷𝙴𝙻𝙾 {user}\n\n�
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "⚠️ 𝙃𝙚𝙮 {query}! 𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!')
 RemoveBG_API = environ.get("RemoveBG_API", "")
-WELCOM_PIC = environ.get("WELCOM_PIC", "")
+WELCOM_VID = environ.get("WELCOM_VID", "")
 WELCOM_TEXT = environ.get("WELCOM_TEXT", "Hai {user}\nwelcome to {chat}")
 PMFILTER = is_enabled(environ.get('PMFILTER', "True"), True)
 G_FILTER = is_enabled(environ.get("G_FILTER", "True"), True)
@@ -63,11 +63,11 @@ SHORT_URL = environ.get("SHORT_URL")
 SHORT_API = environ.get("SHORT_API")
 
 # Others
-IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
+IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "3600"))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'mkn_bots_updates')
-P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "True"), True)
-PM_IMDB = is_enabled(environ.get('PM_IMDB', "True"), True)
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MoviePalace_Updates')
+P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "False"), False)
+PM_IMDB = is_enabled(environ.get('PM_IMDB', "False"), False)
 IMDB = is_enabled(environ.get('IMDB', "True"), True)
 SINGLE_BUTTON = is_enabled(environ.get('SINGLE_BUTTON', "True"), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "{file_name}")
@@ -79,14 +79,5 @@ MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled(environ.get('MELCOW_NEW_USERS', "True"), True)
-PROTECT_CONTENT = is_enabled(environ.get('PROTECT_CONTENT', "False"), False)
+PROTECT_CONTENT = is_enabled(environ.get('PROTECT_CONTENT', "True"), True)
 PUBLIC_FILE_STORE = is_enabled(environ.get('PUBLIC_FILE_STORE', "True"), True)
-
-
-
-
-
-
-
-
-
