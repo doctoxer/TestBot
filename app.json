@@ -1,10 +1,10 @@
 {
-    "name": "PROFESSOR-BOT",
-    "description": "the telegram Autofilter bot",
-    "logo": "https://graph.org/file/b7e8484f6395a180b6380.jpg",
-    "keywords": ["telegram", "auto-filter", "MrMKN"],
-    "website": "https://github.com/MrMKN/PROFESSOR-BOT",
-    "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
+    "name": "αѕнηα ѕαנαη",
+    "description": "the telegram bot",
+    "logo": "https://telegra.ph/file/bada02a3729d547c5b8fc.jpg",
+    "keywords": ["telegram", "auto-filter", "AmalMathew"],
+    "website": "https://github.com/doctoxer/Maalu",
+    "repository": "https://github.com/doctoxer/Maalu",
     "env": {
         "WEBHOOK": {
             "description": "True/False if your server is web support required? the value is True else False",
