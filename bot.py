@@ -68,10 +68,10 @@ class Bot(Client):
                 LOGGER.error(e)
 
     async def stop(self, *args):
-        if self.is_initialized:
-            await super().stop()
-            me = await self.get_me()
-            logging.info(f"{me.first_name} is_...  ♻️Restarting...")
+    if self.is_initialized:
+        await super().stop()
+        me = await self.get_me()
+        logging.info(f"{me.first_name} is_...  ♻️Restarting...")
 
     async def iter_messages(self, chat_id: Union[int, str], limit: int, offset: int = 0) -> Optional[AsyncGenerator["types.Message", None]]:                       
         current = offset
